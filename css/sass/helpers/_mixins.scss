@@ -1,0 +1,32 @@
+/* OverLay MixIn */
+@mixin overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+/* prefix mixin */
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes{
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value
+}
+
+/* animate mixin */
+
+@mixin keyframe($animation-name){
+    @-webkit-keyframes #{$animation-name}{
+        @content
+    }
+    @-moz-keyframes #{$animation-name}{
+        @content
+    }
+    @keyframes #{$animation-name}{
+        @content
+    }
+
+}

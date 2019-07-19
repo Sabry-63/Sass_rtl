@@ -1,0 +1,75 @@
+/* Start header */
+.header{
+    padding: 20px;
+    overflow: hidden;
+    border-bottom:1px solid $grayColor;
+    .dir{
+        background-color: #e2e2e2;
+        a{
+            text-decoration: none;
+            color: #fff;
+            background-color: $redColor;
+            padding: 10px 15px;
+            display:inline-block;
+        }
+    }
+    .logo{
+        @media #{$minSmall}{
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$minMedium}{
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+    }
+    .navbar{
+        background-color: $redColor;
+        border-radius: 15px;
+        overflow: hidden;
+        @media #{$minSmall}{
+            width: 100%;
+            float: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        @media #{$minMedium}{
+            width: 70%;
+            float: $float-left;
+            margin-top: 1em;
+            display: block !important;
+        }
+        @media #{$maxMobile}{
+            display: none;
+            border-radius: 0;
+        }
+        li{
+            width: 20%;
+            font-size: 18px;
+            text-align: center;
+            float: $float-left;
+            @media #{$maxMobile}{
+                display: block;
+                width: 100%;
+                float: none;
+                text-align: $text-left;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                padding: 20px 10px ;
+                color: #FFF;
+                &:hover{
+                    color: #DDD
+                }
+            }
+        }
+    }
+}
+/* End header */

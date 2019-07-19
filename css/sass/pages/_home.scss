@@ -1,0 +1,124 @@
+/* Start Slider */
+.slider{
+    blockquote{
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: center;
+        font-style: italic;
+        width: 80%;
+        margin: 30px auto;
+        font-weight: 500;
+        color: #5e5e5e;
+        font-family: tahoma, arial
+    }
+    img{
+        width: 100%;
+        height: 500px
+    }
+    .bullets{
+        text-align: center
+    }
+    li{
+        display: inline-block;
+        background-color: $grayColor;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 3px solid $grayColor;
+        cursor: pointer;
+        &.active,
+        &:hover {
+        border: 3px solid #333;
+        background: #FFF;
+        }
+    }
+}
+/* End Slider */
+/* Strat Services */
+.services{
+    .services-box{
+    @media #{$minMedium}{
+        float: $float-left;
+        width: (100% / 3);
+        &:not(:last-of-type){
+            padding-right: 20px
+        }
+    }
+    }
+    @media #{$maxMobile} {
+        i{
+            display: block;
+            margin: 15px;
+        }
+    }
+    .services-title{
+        color: #444;
+        i{
+            font-size: 35px;
+            position: relative;
+            top: 4px;
+        }
+    }
+    .services-desc{
+        color: #777;
+        line-height: 1.5;
+    }
+    .link{
+        text-decoration: none;
+        color: $redColor;
+    }
+}
+/* End Services */
+/* Strat players */
+.players{
+    .players-box{
+        @media #{$minSmall}{
+            float: $float-left;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 40px;
+            padding-right: 20px;
+        }
+        @media #{$maxMobile}{
+            margin-bottom: 40px;
+        }
+        @media #{$minMedium}{
+            width: (100% / 4);
+            text-align: $text-left;
+        }
+        img{
+            max-width: 100%;
+        }
+        .players-title{
+            color: #444;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+        .players-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link{
+            text-decoration: none;
+            color: $redColor;
+        }
+    }
+}
+/* End players */
+/* Strat lorem */
+.lorem{
+    .lorem-box{
+        width: (94% / 3);
+        float: $float-left;
+        &:not(:last-of-type){
+            margin-right: 3%
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+/* End lorem */

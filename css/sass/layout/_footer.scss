@@ -1,0 +1,92 @@
+/*Start footer */
+footer {
+    padding: 20px 0 0;
+    background-color: #e2e2e2;
+    margin-top: 50px;
+    overflow: hidden;
+    color: #888;
+    .gallry,.info,.contact{
+        float: $float-left;
+    }
+    .gallry{
+        @media #{$minSmall}{
+            width: 100%;
+        }
+        @media #{$minMedium}{
+            width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            img{
+                float: $float-left;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 25px;
+            }
+            .text{
+                float: $float-left;
+                width: calc(100% - 150px);
+                margin: 0 15px;
+                h4{
+                    color: $redColor;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .info{
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        ul{
+            line-height:1.6;
+            li{
+                span{
+                    color: $redColor;
+                }
+            }
+        }
+        h4{
+            margin-bottom: 5px;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
+    .contact{
+        @media #{$minSmall}{
+            width: 50%;
+        }
+        @media #{$minMedium}{
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 100%;
+            margin-bottom:8px;
+            border-radius: 5px;
+            border: 1px solid #888;
+            padding: 10px;
+        }
+    }
+    .footer-title{
+        color: #555;
+    }
+    .copyright{
+        border-top: 1px solid #cacaca;
+        overflow: hidden;
+        padding: 20px 0;
+        .text-copy, .author{
+            float: $float-left;
+            width: 50%;
+        }
+        .author{
+            text-align: $text-right;
+        }
+    }
+}
+/*End footer */

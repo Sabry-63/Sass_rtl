@@ -1,0 +1,60 @@
+/* media */
+/*color page*/
+/* dir rtl */
+/* dir rtl */
+/* Start header */
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right; } }
+.header .toggler {
+  right: auto;
+  left: 0; }
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right; } }
+.header .navbar li {
+  float: right; }
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right; } }
+
+/* End header */
+/* Strat Services */
+@media (min-width: 992px) {
+  .services .services-box {
+    float: right; } }
+
+/* End Services */
+/* Strat players */
+@media (min-width: 768px) {
+  .players .players-box {
+    float: right; } }
+@media (min-width: 992px) {
+  .players .players-box {
+    text-align: right; } }
+
+/* End players */
+/* Strat lorem */
+.lorem .lorem-box {
+  float: right; }
+.lorem .lorem-box:not(:last-of-type) {
+  margin-right: auto;
+  margin-left: 3%; }
+
+/* End lorem */
+/*Start footer */
+footer .gallry, footer .info, footer .contact {
+  float: right; }
+footer .gallry .img-box img {
+  float: right; }
+footer .gallry .img-box .text {
+  float: right; }
+footer .copyright .text-copy, footer .copyright .author {
+  float: right; }
+footer .copyright .author {
+  text-align: left; }
+
+/*End footer */
+
+/*# sourceMappingURL=homepage-rtl.css.map */
